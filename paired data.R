@@ -1,0 +1,14 @@
+paired.data<-function(file)
+{
+  filename<-read.csv(file)
+  filename<-filename[,-1]
+  i<-1
+  files<-list()
+  while(i<ncol(filename))
+  {
+    filelist<-list(filename[i:(i+8)])
+    files<-append(files,filelist)
+    i<-i+9
+  }
+  return(files)
+}
