@@ -1,5 +1,5 @@
 # pairing-for-social-experiment
-includes several files. Datas requires columns "site", "geno", and "sex". "site" is used over "nest" even in lab reared insects as this means one code can sort both lab and wild data. 
+includes several files. Datas requires columns "site", "geno", and "sex". "site" is used over "nest" even in lab reared insects as this means one code can sort both lab and wild data. It is essential to make stringAsFactors = TRUE when reading files for data to be sorted. 
 
 sorting.data() takes in filtered data and sort it according to genotype and sex, within each combination, the individuals are sorted by width with ascending order. 
 
